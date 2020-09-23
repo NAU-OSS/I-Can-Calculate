@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/calculator_background"
+    >
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="339dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="casual"
+        android:inputType="none"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.StatusBar.Title"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/onehalf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/clear"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:contentDescription="clear"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/clear_button" />
+
+    <ImageButton
+        android:id="@+id/divide"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:contentDescription="divide"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clear"
+        app:srcCompat="@drawable/divide_button" />
+
+    <ImageButton
+        android:id="@+id/multiply"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:contentDescription="multiply"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/equals"
+        app:layout_constraintStart_toEndOf="@+id/divide"
+        app:srcCompat="@drawable/multi_button" />
+    <ImageButton
+        android:id="@+id/minus"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:contentDescription="minus"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus"
+        app:layout_constraintStart_toEndOf="@+id/nine"
+        app:srcCompat="@drawable/minus_button" />
+
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginEnd="48dp"
+        android:background="@null"
+        android:contentDescription="plus"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/plus_button" />
+    <ImageButton
+        android:id="@+id/equals"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:contentDescription="equals"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/equals_button" />
+
+    <ImageButton
+        android:id="@+id/nine"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginStart="48dp"
+        android:background="@null"
+        android:contentDescription="nine"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/nine_button" />
+
+    <ImageButton
+        android:id="@+id/eight"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="48dp"
+        android:background="@null"
+        android:contentDescription="eight"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/equals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/eight_button" />
+
+    <ImageButton
+        android:id="@+id/seven"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:contentDescription="seven"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/eight"
+        app:layout_constraintStart_toEndOf="@+id/six"
+        app:srcCompat="@drawable/seven_button" />
+
+    <ImageButton
+        android:id="@+id/six"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+
+        android:layout_marginBottom="150dp"
+        android:layout_marginStart="48dp"
+        android:background="@null"
+        android:contentDescription="six"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/clear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/six_button" />
+
+    <ImageButton
+        android:id="@+id/five"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="225dp"
+        android:layout_marginEnd="48dp"
+        android:background="@null"
+        android:contentDescription="five"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/five_button" />
+
+    <ImageButton
+        android:id="@+id/four"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="225dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:contentDescription="four"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/five"
+        app:layout_constraintStart_toEndOf="@+id/three"
+        app:srcCompat="@drawable/four_button" />
+
+    <ImageButton
+        android:id="@+id/three"
+        android:layout_width="70dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="225dp"
+        android:layout_marginStart="48dp"
+        android:background="@null"
+        android:contentDescription='"three"'
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/three_button" />
+
+    <ImageButton
+        android:id="@+id/two"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginEnd="48dp"
+        android:background="@null"
+        android:contentDescription='"two"'
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/two_button" />
+
+    <ImageButton
+        android:id="@+id/one"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:contentDescription='"one"'
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/two"
+        app:layout_constraintStart_toEndOf="@+id/zero"
+        app:srcCompat="@drawable/one_button" />
+
+    <ImageButton
+        android:id="@+id/zero"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginStart="48dp"
+        android:adjustViewBounds="false"
+        android:background="@null"
+        android:contentDescription='"zero"'
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/zero_button" />
+
+
+    <ImageButton
+        android:id="@+id/oneFourth"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="375dp"
+        android:layout_marginStart="48dp"
+        android:background="@null"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/onefourth_button" />
+
+    <ImageButton
+        android:id="@+id/onehalf"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="375dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/threeFourths"
+        app:layout_constraintStart_toEndOf="@+id/oneFourth"
+        app:srcCompat="@drawable/onehalf_button" />
+
+    <ImageButton
+        android:id="@+id/threeFourths"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="375dp"
+        android:layout_marginEnd="48dp"
+        android:background="@null"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/threefourths_button" />
+
+</android.support.constraint.ConstraintLayout>
